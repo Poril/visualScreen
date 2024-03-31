@@ -20,7 +20,7 @@ export default defineConfig({
             }
             return num
           },
-          unitPrecision: 5, // 单位转换后保留的精度
+          unitPrecision: 6, // 单位转换后保留的精度
           propList: ['*'], // 能转化为vw的属性列表
           viewportUnit: 'vw', // 希望使用的视口单位
           fontViewportUnit: 'vw', // 字体使用的视口单位

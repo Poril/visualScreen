@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
-    <RouterView />
-  </div>
+  <RouterView />
 </template>
 
 
@@ -10,11 +8,13 @@ import { RouterView } from 'vue-router'
 </script>
 
 
-<style scoped>
-#app {
-  height: 100%;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style scoped> 
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body,
+html {
+  margin: 0 !important;
 }
 </style>
