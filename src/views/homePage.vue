@@ -9,7 +9,9 @@
                 <p class="headerTCenter">安全监管大屏</p>
             </div>
             <div class="middle">
-                
+                <div class="middleLeft">1</div>
+                <div class="middleCenter">中部内容</div>
+                <div class="middleRight">右侧</div>
             </div>
         </div>
     </div>
@@ -48,7 +50,7 @@ export default {
             }
             .headerTLeft{
                     width: 598px;
-                    font-size: 35px;
+                    font-size: 30px;
                     float: left;
                     .textOne{
                         color: #718fc6;
@@ -59,6 +61,26 @@ export default {
                         color: #4a649d;
                         margin-right: 118px;
                     }
+            }
+        }
+        .middle{
+            width: 1790px;
+            height: 930px;
+            display: flex;
+            justify-content: space-between;
+            color: #adcdf6;
+            margin: 0 auto;
+            .middleLeft{
+                width: 445px;
+                background: yellow;
+            }
+            .middleCenter{
+                width: 850px;
+                background: red;
+            }
+            .middleRight{
+                width: 445px;
+                background: blue;
             }
         }
     }
