@@ -9,7 +9,26 @@
                 <p class="headerTCenter">安全监管大屏</p>
             </div>
             <div class="middle">
-                <div class="middleLeft">1</div>
+                <div class="middleLeft">
+                    <div class="mLeftOne">
+                        <p class="mText">场所总览</p>
+                        <img src="@/assets/safeImg/标题栏hdpi.png" class="mImg"> 
+                        <ul class="mUl">
+                            <li class="mLi">
+                                <p class="mLTextOne">456</p>
+                                <p class="mLTextTwo">机构总数</p>
+                            </li>
+                            <li class="mLi">
+                                <p class="mLTextOne">456</p>
+                                <p class="mLTextTwo">楼栋总数</p>
+                            </li>
+                            <li class="mLi">
+                                <p class="mLTextOne">456</p>
+                                <p class="mLTextTwo">厨房总数</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="middleCenter">中部内容</div>
                 <div class="middleRight">右侧</div>
             </div>
@@ -68,19 +87,56 @@ export default {
             height: 930px;
             display: flex;
             justify-content: space-between;
-            color: #adcdf6;
+            color: #e5f1fc;
             margin: 0 auto;
             .middleLeft{
                 width: 445px;
-                background: yellow;
+                .mLeftOne{
+                    width: 445px;
+                    height: 250px;
+                    .mText{
+                        margin: 0;
+                        line-height: 0px;
+                        font-size: 30px;
+                    }
+                    .mImg{
+                        width: 445px;
+                        margin-bottom: 10px;
+                    }
+                    .mUl{
+                        width: 445px;
+                        height: 160px;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-align: center;
+                        border: 1px solid #04285b;
+                        box-shadow:inset 0 0 60px 15px rgba(4, 40, 91, 1);     /* 内部扩散 水平偏移量 垂直偏移量 模糊半径 扩散半径 色彩 */
+                        .mLi{
+                            margin: 0 20px 0 20px;
+                            .mLTextOne{
+                                color:#10c3cb;
+                                font-size: 40px;
+                                margin: 0;
+                            }
+                            .mLTextTwo{
+                                margin: 10px 0 0 0 ;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
             }
             .middleCenter{
                 width: 850px;
-                background: red;
+                background: #131b2f;
             }
             .middleRight{
                 width: 445px;
-                background: blue;
+                background: #061e4d;
             }
         }
     }
